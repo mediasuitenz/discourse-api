@@ -39,7 +39,7 @@ describe('Discourse User API', function() {
         should.exist(body);
         httpCode.should.equal(200);
 
-        var json = JSON.parse(body);
+        var json = body;
 
         //make more assertions
         json.should.have.properties('success');
